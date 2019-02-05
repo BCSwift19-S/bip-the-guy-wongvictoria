@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image 0 attila" translatesAutoresizingMaskIntoConstraints="NO" id="rpY-Y8-UpC">
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image 0 attila" translatesAutoresizingMaskIntoConstraints="NO" id="rpY-Y8-UpC">
                                 <rect key="frame" x="16" y="20" width="343" height="457"/>
                                 <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="457" id="UzE-rF-rAj"/>
                                 </constraints>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="Dqa-Zz-MWI" appends="YES" id="WiV-9X-tfV"/>
+                                    <outletCollection property="gestureRecognizers" destination="Bw3-XG-5uW" appends="YES" id="oQ8-2q-pzA"/>
                                 </connections>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose Image to Punch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZd-2u-PzI">
@@ -41,7 +41,6 @@
                                         <rect key="frame" x="0.0" y="0.0" width="93" height="30"/>
                                         <state key="normal" title="Photo Library"/>
                                         <connections>
-                                            <action selector="libraryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zwh-7e-jN5"/>
                                             <action selector="photoLibraryPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wcO-u6-V33"/>
                                         </connections>
                                     </button>
@@ -73,9 +72,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="Dqa-Zz-MWI">
+                <tapGestureRecognizer id="Bw3-XG-5uW">
                     <connections>
-                        <action selector="imageTapped:" destination="BYZ-38-t0r" id="2e6-QJ-tX6"/>
+                        <action selector="imageTapped:" destination="BYZ-38-t0r" id="Cdr-Ei-DZL"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>

@@ -33,23 +33,17 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.25, delay: 0.0,
                     usingSpringWithDamping: 0.2,
                     initialSpringVelocity: 10, options: [],
-                    animations: {self.imageToPunch.bounds = bounds}, completion: nil)
+                    animations: { self.imageToPunch.bounds = bounds }, completion: nil)
     }
     
+//    @IBAction func photoLibraryPressed(_ sender: UIButton) {
+//    }
+//    @IBAction func cameraPressed(_ sender: UIButton) {
+//    }
     
-//    UIView.animate(withDuration: .025, delay: 0.0,
-//            usingSpringWithDamping: 0.2,
-//            initialSpringVelocity: 10, options: [],
-//            animations: (self.imageToPunch.bounds = bounds), completion: nil)
-    
-     //MARK: Actions
-
-    @IBAction func photoLibraryPressed(_ sender: UIButton) {
-    }
-    @IBAction func cameraPressed(_ sender: UIButton) {
-    }
     @IBAction func imageTapped(_ sender: UITapGestureRecognizer) {
         animateImage()
+        print("I was tapped!")
     }
     
 }
